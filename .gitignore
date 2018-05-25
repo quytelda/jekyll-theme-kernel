@@ -1,0 +1,14 @@
+# Rubygem/Bundler Files
+*.gem
+.bundle
+Gemfile.lock
+
+# Jekyll Files
+.sass-cache
+_site
+
+# Temporary Files
+*~
+*.*~*
+\#*#
+*.old
