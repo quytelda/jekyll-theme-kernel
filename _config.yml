@@ -1,0 +1,13 @@
+theme: jekyll-theme-kernel
+
+title: Kernel Theme
+logo: /images/logo.png
+description: Kernel is a simple static Jekyll theme inspired by kernel.org.
+
+defaults:
+        -
+                scope:
+                        path: ""
+                        type: "pages"
+                values:
+                        layout: "default"
