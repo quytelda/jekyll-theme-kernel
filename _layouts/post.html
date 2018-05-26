@@ -1,5 +1,23 @@
----
-layout: default
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en">
+{% include meta.html %}
+<body>
+	{% include header.html %}
 
-{{ content }}
+	<div id="wrapper">
+		{% include sidebar.html %}
+
+		<div id="main">
+			<h1>{{ page.title }}</h1>
+
+			{{ content }}
+
+			{% include post-meta.html %}
+		</div>
+
+		{% include clear.html %}
+	</div>
+
+	{% include footer.html %}
+</body>
+</html>
