@@ -10,6 +10,9 @@ This is a paragraph of text.  The first paragraph of text on your website is ver
 
 Most websites will feature multiple types of content, including:
 
+### Hyperlinks
+Check out this [hyperlink]({{ "/2018/05/26/a-jekyll-post.html" | absolute_url }}) to an example blog post.
+
 ### Unordered List
 * This is the first item.
 * This is the second item.
