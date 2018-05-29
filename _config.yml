@@ -5,6 +5,8 @@ logo: /images/logo.png
 description: Kernel is a simple static Jekyll theme inspired by kernel.org.
 author: Your Name Goes Here
 
+url: https://quytelda.github.io/jekyll-theme-kernel
+
 defaults:
         -
                 scope:
