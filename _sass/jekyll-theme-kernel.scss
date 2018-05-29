@@ -6,6 +6,7 @@
 }
 
 body {
+  min-width: 342px;
   padding-left:  100px;
   padding-right: 100px;
 
@@ -34,9 +35,25 @@ header a#title {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 860px) {
+  #wrapper {
+    display: flex;
+  }
+
+  #sidebar {
+    flex: 1;
+
+    border-right: 1px dashed lightgrey;
+  }
+
+  #main {
+    flex: 4;
+  }
+}
+
 #wrapper {
   margin:  20px auto 0 auto;
-  padding: 40px;
+  padding: 40px 30px 40px 30px;
 
   color: #606060;
   background: white;
@@ -55,15 +72,9 @@ header a#title {
 }
 
 #sidebar {
-  float: left;
+  padding: 0 20px 0 20px;
 
-  width: 258px;
-  margin-right:  25px;
-  padding-right: 25px;
-
-  border-right: 1px dashed #ccc;
-
-  text-align:  right;
+  text-align: right;
 }
 
 #sidebar h1.title {
@@ -80,21 +91,21 @@ header a#title {
 }
 
 #sidebar img.logo {
+  display: block;
+
   width:  256px;
   height: 256px;
-  margin: 10px 0 10px 0;
+  margin: 10px auto 10px auto;
 
   border: 1px solid lightgrey;
   border-radius: 15px;
 }
 
 #main {
-  margin-left: 309px;
+  padding: 0 20px 0 20px;
 }
 
 #main h1 {
-  margin: 0 0 20px 0;
-
   font-size: 30px;
   font-weight: bold;
   letter-spacing: -1px;
@@ -122,5 +133,5 @@ header a#title {
 }
 
 footer {
-  margin: 20px 42px;
+  margin: 20px 0;
 }
