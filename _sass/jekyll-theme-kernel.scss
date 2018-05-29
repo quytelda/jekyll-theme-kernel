@@ -46,7 +46,7 @@ header a#title {
     border-right: 1px dashed lightgrey;
   }
 
-  #main {
+  main {
     flex: 4;
   }
 }
@@ -101,34 +101,34 @@ header a#title {
   border-radius: 15px;
 }
 
-#main {
+main {
   padding: 0 20px 0 20px;
 }
 
-#main h1 {
+main h1 {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: -1px;
 }
 
-#main p {
+main p {
   margin: 0 0 20px 0;
 
   font-size: 15px;
   line-height: 20px;
 }
 
-#main ul, #main ol {
+main ul, main ol {
   margin: 0 0 20px 20px;
 
   font-size: 15px;
 }
 
-#main ul {
+main ul {
   list-style-type: square;
 }
 
-#main p#post-meta {
+main p#post-meta {
   color: #aaa;
 }
 
