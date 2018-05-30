@@ -40,7 +40,7 @@ header a#title {
  * remainder.  There will be a border between the sidebar on the left and the
  * main body on the right. */
 @media only screen and (min-width: 860px) {
-  #wrapper {
+  #content {
     display: flex;
   }
 
@@ -67,8 +67,8 @@ header a#title {
 }
 
 #wrapper {
-  margin:  20px auto 0 auto;
-  padding: 40px 30px 40px 30px;
+  margin:  0 auto;
+  padding: 10px 30px 40px 30px;
 
   color: #606060;
   background: white;
@@ -86,8 +86,23 @@ header a#title {
   color: #528;
 }
 
+#menu {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+
+  border-bottom: 1px dashed lightgrey;
+}
+
+#menu a {
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
 #sidebar {
-  padding: 0 20px 20px 20px;
+  padding: 20px;
 
   text-align: right;
 }
@@ -117,7 +132,7 @@ header a#title {
 }
 
 main {
-  padding: 0 20px 0 20px;
+  padding: 20px;
 }
 
 main h1 {
