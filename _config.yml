@@ -1,7 +1,7 @@
 theme: jekyll-theme-kernel
 
 title: Kernel Theme
-logo: /images/logo.png
+logo: /assets/images/logo.png
 description: Kernel is a simple static Jekyll theme inspired by kernel.org.
 author: Your Name Goes Here
 
