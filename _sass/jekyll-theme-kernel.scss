@@ -41,37 +41,6 @@ header a#title {
   text-decoration: none;
 }
 
-/* On screens 860px wide or wider, display a two column flex layout with the
- * sidebar taking 1/5 of the horizontal space, and the main content filling the
- * remainder.  There will be a border between the sidebar on the left and the
- * main body on the right. */
-@media only screen and (min-width: 860px) {
-  #content {
-    display: flex;
-  }
-
-  #sidebar {
-    flex: 1;
-
-    border-right: 1px dashed lightgrey;
-  }
-
-  main {
-    flex: 4;
-  }
-}
-
-/* On screens less than 860px wide, do not do any flex rendering, which means
- * the sidebar and the main body will both be rendered in order, stacked
- * vertically.  Draw a border between the sidebar on the top and the main body
- * on the bottom.
- */
-@media only screen and (max-width: 859px) {
-  #sidebar {
-    border-bottom: 1px dashed lightgrey;
-  }
-}
-
 #wrapper {
   margin:  0 auto;
   padding: 5px 30px 40px 30px;
@@ -93,17 +62,21 @@ header a#title {
 }
 
 #menu {
-  display: flex;
-  justify-content: space-between;
-
   padding: 10px 20px;
 
   border-bottom: 1px dashed lightgrey;
+
+  text-align: center;
 }
 
-#menu a {
-  font-weight: bold;
+#menu ul {
+  list-style-type: none;
+}
 
+#menu li {
+  list-style-type: none;
+
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -176,4 +149,40 @@ main ul {
 
 footer {
   margin: 20px 0;
+}
+
+/* On screens 860px wide or wider, display a two column flex layout with the
+ * sidebar taking 1/5 of the horizontal space, and the main content filling the
+ * remainder.  There will be a border between the sidebar on the left and the
+ * main body on the right. */
+@media only screen and (min-width: 860px) {
+  #content {
+    display: flex;
+  }
+
+  #sidebar {
+    flex: 1;
+
+    border-right: 1px dashed lightgrey;
+  }
+
+  main {
+    flex: 4;
+  }
+
+  #menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* On screens less than 860px wide, do not do any flex rendering, which means
+ * the sidebar and the main body will both be rendered in order, stacked
+ * vertically.  Draw a border between the sidebar on the top and the main body
+ * on the bottom.
+ */
+@media only screen and (max-width: 859px) {
+  #sidebar {
+    border-bottom: 1px dashed lightgrey;
+  }
 }
