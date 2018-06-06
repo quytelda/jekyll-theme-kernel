@@ -1,9 +1,15 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>{{ site.title }}</title>
+
 	<link rel="icon" type="image/png"
 		  href="{{ '/assets/images/favicon.png' | relative_url }}" />
 	<link rel="stylesheet"
 		  href="{{ '/assets/css/style.css' | relative_url }}" />
+
+	{% if page.title %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% else %}
+	<title>{{ site.title }}</title>
+	{% endif %}
 </head>
